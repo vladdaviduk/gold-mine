@@ -12,7 +12,7 @@ public class GMI {
 
         int maxGold = 0;
         for (int i = 0; i < gold.length; i++) {
-            maxGold = max(maxGold, stepAndCalculate(gold, buildStep(gold, i, 0), gold[i][0], maxGold, m, n));
+            maxGold = stepAndCalculate(gold, buildStep(gold, i, 0), gold[i][0], maxGold, m, n);
         }
 
         return maxGold;
